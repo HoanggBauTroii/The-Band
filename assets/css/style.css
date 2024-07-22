@@ -183,7 +183,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('./assets/images/Sliders/slider01.jpg') center top / cover no-repeat;
+    background: url('./assets/images/map.jpg') center top / cover no-repeat;
 }
 
 #slider .text-content {
