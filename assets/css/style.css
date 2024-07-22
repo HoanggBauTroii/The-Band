@@ -35,6 +35,8 @@ html {
     margin-top: 15px;
     cursor: pointer;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 #content .btn:hover {
@@ -204,6 +206,7 @@ html {
 #slider .text-description {
     font-size: 15px;
     font-weight: 700px;
+    text-shadow: 0 0 1px #000;
 }
 
 
@@ -335,12 +338,12 @@ html {
     line-height: 1.5;
 }
 
-.contact-info a{
+.contact-info a {
     color: #101aef;
     opacity: 0.8;
 }
 
-.contact-info a:hover{
+.contact-info a:hover {
     opacity: 1;
 }
 
@@ -503,43 +506,46 @@ html {
 
 /* Tablet: width >= 740px and width < 1024px */
 @media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-    .contact-info{
+    .contact-info {
         line-height: 2;
     }
 }
 
 /* PC */
-@media screen and (min-width: 64em) {
-
-}
+@media screen and (min-width: 64em) {}
 
 /* Tablet & Mobile */
-@media screen and (max-width: 63.9375em){
-    #nav .subnav a{
-        padding: 5px 12px ;
+@media screen and (max-width: 63.9375em) {
+    #nav .subnav a {
+        padding: 5px 12px;
     }
 
     #content .btn {
         padding: 16px 16px;
     }
 
-    .contact-info{
+    .contact-info {
         line-height: 2;
     }
 
-    .contact-form .form-control{
+    .contact-form .form-control {
         padding: 15px;
+        font-size: 16px;
     }
 
-    #footer .social{
+    .contact-submit-btn {
+        font-size: 16px;
+    }
+
+    #footer .social {
         font-size: 48px;
     }
 
-    #footer .social a{
+    #footer .social a {
         margin: 0 8px;
     }
 
-    #footer .copyright a{
+    #footer .copyright a {
         display: inline-block;
         padding: 12px 0;
     }
@@ -593,6 +599,11 @@ html {
     #nav .subnav a {
         color: #fff;
         padding: 5px 42px;
+    }
+
+    #slider .text-heading,
+    #slider .text-description {
+        display: none;
     }
 
     #content .member-item {
